@@ -9,8 +9,7 @@ vim.opt.termguicolors = true
 vim.cmd('syntax enable')
 
 --Color Scheme Settings
--- vim.cmd('colorscheme lunaperche')
-vim.cmd('colorscheme habamax')
+vim.cmd('colorscheme pastel_warm_dark')
 
 -- vim.cmd.background=dark
 vim.cmd("hi Normal guibg=NONE ctermbg=NONE")
