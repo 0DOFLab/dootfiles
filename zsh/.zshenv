@@ -52,5 +52,8 @@ export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=$HOME/.config/java
 # Ollama
 export OLLAMA_HOST=http://chungo:11434
 
+# Gitea / Github / Gitlab CLI tool completion
+source <(tea completion zsh)
+
 # Execute X if it is not running
 [ ! -z $(command -v startx) ] && startx ${XINITRC}
