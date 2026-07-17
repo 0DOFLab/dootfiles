@@ -6,6 +6,9 @@
         export PATH="$PATH:${SCRIPT_DIR//$'\n'/:}" 
 PATH=$PATH:$HOME/.local/bin
 
+# Work stuff
+[ -e "$HOME/.config/zsh/work_cfg" ] && source "$HOME/.config/zsh/work_cfg"
+
 # Default Programs
 export BROWSER="brave-browser"
 export EDITOR="nvim"

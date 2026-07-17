@@ -25,7 +25,6 @@ setopt inc_append_history
 # FILES TO SOURCE
 #===============================================================================#
 [ -e "$HOME/.config/zsh/aliasrc" ]           && source "$HOME/.config/zsh/aliasrc"
-[ -e "$HOME/.config/zsh/work_cfg" ]          && source "$HOME/.config/zsh/work_cfg"
 
 #===============================================================================#
 # Prompt
