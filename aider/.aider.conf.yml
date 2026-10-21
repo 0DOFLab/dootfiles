@@ -1,0 +1,40 @@
+# ~/.aider.conf.yml
+
+no-show-release-notes: false
+
+# Git
+git: true
+auto-commits: false
+dirty-commits: false
+attribute-author: true
+attribute-committer: true
+
+# Model
+model: ollama_chat/Coder:latest
+weak-model: ollama_chat/Researcher:latest
+auto-accept-architect: false
+
+# Context
+map-tokens: 1024
+max-chat-history-tokens: 24000
+
+# IO
+stream: true
+show-diffs: true
+pretty: true
+
+# Behaviour
+check-model-accepts-settings: False
+timeout: 86400
+suggest-shell-commands: true
+
+# Conventions (add the file to your repo)
+read: CONVENTIONS.md
+
+# Model settings
+model-settings-file: ~/.aider.model.settings.yml
+
+# Test
+test-cmd: make test
+auto-test: true
+# yes-always: true

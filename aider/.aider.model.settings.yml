@@ -1,0 +1,63 @@
+# ~/.aider.model.settings.yml
+
+## Alibaba
+
+- name: ollama_chat/qwen2.5-coder:14b
+  edit_format: udiff
+  extra_params:
+    num_ctx: 16384
+    max_tokens: 8192
+
+## Google
+
+- name: ollama_chat/Gemma4-Coder:latest
+  edit_format: diff
+  extra_params:
+    num_ctx: 8192
+    max_tokens: 4096
+
+# Meta
+
+- name: ollama_chat/muse-glimmer:latest
+  edit_format: whole
+  extra_params:
+    num_ctx: 16384
+    max_tokens: 8192
+    think: "low"
+
+- name: ollama_chat/muse-glimmer:latest
+  edit_format: diff
+  extra_params:
+    num_ctx: 16384
+    max_tokens: 8192
+
+## General
+
+- name: ollama_chat/Coder:latest
+  edit_format: diff
+  extra_params:
+    num_ctx: 32768
+    max_tokens: 8192
+
+- name: ollama_chat/PeerReviewer:latest
+  edit_format: whole
+  extra_params:
+    num_ctx: 32768
+    max_tokens: 4096
+
+- name: ollama_chat/Reasoning:latest
+  edit_format: whole
+  use_temperature: false
+  reasoning_tag: think
+  extra_params:
+    num_ctx: 32768
+    max_tokens: 16384
+
+- name: ollama_chat/Researcher:latest
+  edit_format: whole
+  use_temperature: false
+  extra_params:
+    num_ctx: 16384
+    max_tokens: 4096
+    think: false
+
